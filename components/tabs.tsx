@@ -6,12 +6,12 @@ import { useRouter, usePathname } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
-const Tabs = () => {
+const Tabs: React.FC = () => {
     const router = useRouter();  
     const pathname = usePathname();
     const insets = useSafeAreaInsets();
 
-    const handleNavigation = (route) => {
+    const handleNavigation = (route: string): void => {
         if (pathname !== route) {
             router.replace(route);
         }

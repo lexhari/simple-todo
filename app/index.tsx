@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, Pressable, Modal } from 'react-native';
+import { StyleSheet, Text, View, Pressable, Modal, TextInput } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import TodoItem from '../components/todo-item'; 
+import TodoItem from '../components/todo-item';
 
-const index = () => {
-    const [modalVisible, setModalVisible] = useState(false);
-    const currentDate = new Date();
-    const formattedDate = currentDate.toLocaleDateString('en-US', {
+const Index: React.FC = () => {
+    const [modalVisible, setModalVisible] = useState<boolean>(false);
+    const [todoText, setTodoText] = useState<string>('');
+    const [todoDescription, setTodoDescription] = useState<string>('');
+    
+    const currentDate: Date = new Date();
+    const formattedDate: string = currentDate.toLocaleDateString('en-US', {
         weekday: 'long',
         month: 'long',
         day: 'numeric',
@@ -55,7 +58,24 @@ const index = () => {
                         </Pressable>
                         <Text className="text-lg font-bold">Create To-do</Text>
                     </View>
-                    <Text>Modal</Text>
+                    <View>
+                        <TextInput
+                            onChangeText={(text: string) => setTodoText(text)}
+                            value={todoText}
+                            placeholder="Add a new todo item"
+                            keyboardType="default"
+                        />
+                        <TextInput
+                            onChangeText={(text: string) => setTodoDescription(text)}
+                            value={todoDescription}
+                            placeholder="Add a description"
+                            keyboardType="default"
+                        />
+                        <View>
+                            <Text>Set Due Date</Text>
+
+                        </View>
+                    </View>
                     <Pressable>
                         <Text>Create</Text>
                     </Pressable>
@@ -65,6 +85,6 @@ const index = () => {
     );
 };
 
-export default index;
+export default Index;
 
 const styles = StyleSheet.create({});

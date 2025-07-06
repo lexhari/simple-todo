@@ -3,7 +3,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import Tabs from '../components/tabs';
 import "../global.css";
 
-export default function RootLayout() {
+export default function RootLayout(): React.JSX.Element {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <Stack>
