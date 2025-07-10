@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         // DM Sans fonts
+        'dm-sans-thin': ['DMSans-Thin'],
         'dm-sans-light': ['DMSans-Light'],
         'dm-sans': ['DMSans-Regular'], // Regular as default
         'dm-sans-medium': ['DMSans-Medium'],
