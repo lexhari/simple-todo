@@ -136,10 +136,10 @@ const Tabs: React.FC = () => {
                             <Text className="text-lg font-darker-grotesque-bold text-gray-700 mb-2">Category</Text>
                             <View className="flex-row flex-wrap justify-between">
                                 {[
-                                    { name: 'Work', icon: 'briefcase', color: 'bg-blue-500' },
-                                    { name: 'Personal', icon: 'person', color: 'bg-purple-500' },
-                                    { name: 'Health', icon: 'fitness', color: 'bg-green-500' },
-                                    { name: 'Learning', icon: 'library', color: 'bg-orange-500' }
+                                    { name: 'Work', icon: 'briefcase', color: 'bg-blue-900' },
+                                    { name: 'Personal', icon: 'person', color: 'bg-purple-900' },
+                                    { name: 'Health', icon: 'fitness', color: 'bg-green-900' },
+                                    { name: 'Learning', icon: 'library', color: 'bg-orange-700' }
                                 ].map((cat) => (
                                     <Pressable
                                         key={cat.name}
@@ -207,7 +207,7 @@ const Tabs: React.FC = () => {
                     
                     <View className="">
                         <Pressable 
-                            className={`p-4 rounded-2xl shadow-lg ${todoText.trim() ? 'bg-blue-600' : 'bg-gray-300'}`}
+                            className={`p-4 rounded-2xl shadow-lg ${todoText.trim() ? 'bg-[#216094]' : 'bg-gray-300'}`}
                             onPress={handleCreateTodo}
                             disabled={!todoText.trim()}
                         >
