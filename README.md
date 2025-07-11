@@ -1,6 +1,10 @@
-# Simple Front-end State-based Todo App
+# Simple Front-end State-based Todo App in React Native
 
-![Todo Mockup 1]()
+<p align="center">
+  <img src="todomockup1.svg" alt="Todo Mockup 1" width="30%" style="margin-right:10px;"/>
+  <img src="todomockup2.svg" alt="Todo Mockup 2" width="30%" style="margin-right:10px;"/>
+  <img src="todomockup3.svg" alt="Todo Mockup 3" width="30%"/>
+</p>
 
 A clean and intuitive todo application built with React Native and Expo, featuring a unique straightforward week view that most todo apps lack.
 
