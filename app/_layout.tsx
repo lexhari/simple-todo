@@ -18,7 +18,7 @@ export default function RootLayout(): React.JSX.Element {
         'DMSans-Medium': require('../assets/fonts/DMSans-Medium.ttf'),
         'DMSans-SemiBold': require('../assets/fonts/DMSans-SemiBold.ttf'),
         'DMSans-Bold': require('../assets/fonts/DMSans-Bold.ttf'),
-        
+
         // Darker Grotesque fonts
         'DarkerGrotesque-Regular': require('../assets/fonts/DarkerGrotesque-Regular.ttf'),
         'DarkerGrotesque-Medium': require('../assets/fonts/DarkerGrotesque-Medium.ttf'),
@@ -36,22 +36,26 @@ export default function RootLayout(): React.JSX.Element {
   }
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <Stack>
-        <Stack.Screen 
-          name="index" 
-          options={{ 
-            headerShown: false
-          }} 
-        />
-        <Stack.Screen 
-          name="week" 
-          options={{ 
-            headerShown: false
-          }} 
-        />
-      </Stack>
-      <Tabs />
+    <SafeAreaView className="flex-1">
+      <View className="flex-1 flex-col">
+        <View className="flex-1">
+          <Stack>
+            <Stack.Screen
+              name="index"
+              options={{
+                headerShown: false
+              }}
+            />
+            <Stack.Screen
+              name="week"
+              options={{
+                headerShown: false
+              }}
+            />
+          </Stack>
+        </View>
+        <Tabs />
+      </View>
     </SafeAreaView>
   );
 }

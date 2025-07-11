@@ -55,7 +55,7 @@ const Tabs: React.FC = () => {
 
     return (
         <View style={{ paddingBottom: insets.bottom }} className="bg-white border-t border-gray-200">
-            <View className="flex flex-row justify-around items-center p-4">
+            <View className="flex flex-row justify-around items-center p-4 h-fit w-full">
                 <Pressable
                     className='w-1/3 flex items-center'
                     onPress={() => handleNavigation('/')} accessibilityLabel='Go to Home'>
@@ -217,7 +217,7 @@ const Tabs: React.FC = () => {
                                     size={20} 
                                     color={todoText.trim() ? 'white' : '#9CA3AF'} 
                                 />
-                                <Text className={`text-center text-lg font-semibold ${todoText.trim() ? 'text-white' : 'text-gray-500'}`}>
+                                <Text className={`text-center text-xl font-dm-sans-medium ${todoText.trim() ? 'text-white' : 'text-gray-500'}`}>
                                     Create Todo
                                 </Text>
                             </View>

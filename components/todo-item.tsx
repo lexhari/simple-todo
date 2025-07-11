@@ -32,7 +32,7 @@ function TodoItem({ todo }: TodoItemProps) {
 
     return (
         <View className="bg-white rounded-xl gap-2 p-4 mb-3 border border-gray-100 shadow-sm">
-            {/* Header: Category and Actions */}
+            {/* Header */}
             <View className="flex flex-row justify-between items-start">
                 <View className="py-1 px-3 rounded-full bg-blue-100">
                     <Text className="text-xs text-blue-800 font-dm-sans-medium">

@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, Pressable, Modal, TextInput, FlatList } from 'react-native';
-import Ionicons from '@expo/vector-icons/Ionicons';
 import TodoItem from '../components/todo-item';
-import DateTimePicker, { DateType, useDefaultStyles } from 'react-native-ui-datepicker';
-import FontDemo from '../components/font-demo';
 import { useTodoStore } from '../store/todoStore';
 
 const Index: React.FC = () => {
@@ -31,6 +28,7 @@ const Index: React.FC = () => {
                         keyExtractor={(item) => item.id}
                         renderItem={({ item }) => <TodoItem todo={item} />}
                         showsVerticalScrollIndicator={false}
+                        contentContainerStyle={{ paddingBottom: 80 }}
                     />
                 ) : (
                     <View className="py-8 items-center">
