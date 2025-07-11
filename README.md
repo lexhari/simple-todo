@@ -24,6 +24,11 @@ Most todo applications don't provide a straightforward week view, making it diff
   - Due date selection
 - **Todo Management**: Mark todos as complete and delete tasks (soon, edit details)
 
+### Future Features
+- Editing details
+- Settings
+- Backend Integration
+
 ## Tech Stack
 
 - **React Native** with Expo
@@ -31,7 +36,7 @@ Most todo applications don't provide a straightforward week view, making it diff
 - **Zustand** for state management
 - **NativeWind** for styling (Tailwind CSS)
 - **Expo Router** for navigation
-- 
+
 ## Setup
 
 ### Prerequisites
