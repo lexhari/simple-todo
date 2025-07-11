@@ -43,6 +43,7 @@ export const useTodoStore = create<TodoStore>((set) => ({
         ),
     })),
 
+    // For possible future updates that will allow editing of todos
     updateTodo: (id, updates) => set((state) => ({
         todos: state.todos.map(todo =>
             todo.id === id ? { ...todo, ...updates } : todo
